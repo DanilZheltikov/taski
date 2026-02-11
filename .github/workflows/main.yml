@@ -70,7 +70,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
       
       - name: Push to DockerHub
-        uses: build-push-action@v4
+        uses: docker/build-push-action@v4
         with:
           context: ./backend/
           push: true
